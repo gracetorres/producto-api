@@ -1,0 +1,30 @@
+.img{
+    width: 60px;
+   
+}
+
+.mt10{
+    margin-top: 10px;
+}
+
+.display-block{
+    display: block;
+}
+
+.display-none{
+    display: none !important;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.input{
+    width: 100%;
+    padding: 1em;
+}
+
+.w100{
+    width: 100%;
+}
