@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal.css">
+</head>
+<body onload="funcionesIniciales()">
+
+    <button onclick="abrirModal(true)">Agregar producto</button>
+    <br>
+    <br>
+    <table  border="1" cellspacing="1" width="100%"   >
+        <thead>
+            <th>Item</th>
+            <th>Nombre</th>
+            <th>Categoría</th>
+            <th>Precio</th>
+            <th>Imagen</th>
+            <th>Acciones</th>
+        </thead>
+        <tbody id="table">
+
+        </tbody>
+    </table>
+
+
+    <section id="section1" class="modal">
+        <div class="modal__container flex-column">     
+            <h2 id="tituloAgregar" class="modal__title">Agregar producto</h2>
+            <h2 id="tituloEditar" class="modal__title">Editar producto</h2>
+            <div class="flex-column w100" id="inputs">
+
+               <input id="inpIDproducto" type="hidden"> 
+
+                <input id="inpNombre" class="input" type="text" placeholder="Nombre">
+                <input id="inpCategoría" class="input" type="text" placeholder="Categoría">
+                <input id="inpPrecio" class="input" type="text" placeholder="Precio">
+                <input id="inpImagen" class="input" type="text" placeholder="Imagen">
+            </div>    
+            
+            <div class="flex-row justify-center">
+                <button id="botonAgregar" onclick="agregarProducto()" class="modal__close">Agregar</button>
+                <button id="botonEditar" onclick="editarProducto()" class="modal__close">Editar</button>
+                <button id="cancelarProducto" onclick="cerrarModal()" class="modal__close">Cancelar</button>               
+            </div>                             
+        </div>
+    </section>
+
+    <script src="js.js"></script>
+</body>
+</html>
